@@ -8,7 +8,9 @@
     <com.nvapp.lib.view.ActionBar
         android:id="@+id/actionBar1"
         android:layout_width="match_parent"
-        android:layout_height="60dp" >
+        android:layout_height="60dp"
+        android:background="#00ff00"
+        android:showDividers="middle" >
 
     </com.nvapp.lib.view.ActionBar>
 
