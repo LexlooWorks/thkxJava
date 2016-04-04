@@ -14,29 +14,35 @@
         android:id="@+id/fragment_main_chat"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/navi_btns"
         class="com.nvapp.kx.shopSales.fragment.main.ContactFragment" />
 
     <fragment
         android:id="@+id/fragment_main_contact"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/navi_btns"
         class="com.nvapp.kx.shopSales.fragment.main.ContactFragment" />
 
     <fragment
         android:id="@+id/fragment_main_internal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/navi_btns"
         class="com.nvapp.kx.shopSales.fragment.main.ContactFragment" />
 
     <fragment
         android:id="@+id/fragment_main_my"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@+id/navi_btns"
         class="com.nvapp.kx.shopSales.fragment.main.ContactFragment" />
 
     <LinearLayout
+        android:id="@+id/navi_btns"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
         android:background="@color/white"
         android:gravity="center"
         android:orientation="horizontal" >
@@ -45,25 +51,29 @@
             android:id="@+id/navi_btn_chat"
             android:layout_width="0dip"
             android:layout_height="fill_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1" >
+        </com.nvapp.lib.view.NaviTabButton>
 
         <com.nvapp.lib.view.NaviTabButton
             android:id="@+id/navi_btn_contact"
             android:layout_width="0dip"
             android:layout_height="fill_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1" >
+        </com.nvapp.lib.view.NaviTabButton>
 
         <com.nvapp.lib.view.NaviTabButton
             android:id="@+id/navi_btn_internal"
             android:layout_width="0dip"
             android:layout_height="fill_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1" >
+        </com.nvapp.lib.view.NaviTabButton>
 
         <com.nvapp.lib.view.NaviTabButton
             android:id="@+id/navi_btn_my"
             android:layout_width="0dip"
             android:layout_height="fill_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1" >
+        </com.nvapp.lib.view.NaviTabButton>
     </LinearLayout>
 
 </RelativeLayout>
