@@ -2,7 +2,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/red"
     android:clipToPadding="true"
     android:fitsSystemWindows="true"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -10,4 +9,61 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.nvapp.kx.shopSales.MainActivity" >
+
+    <fragment
+        android:id="@+id/fragment_main_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.nvapp.kx.shopSales.fragment.main.ContactFragment" />
+
+    <fragment
+        android:id="@+id/fragment_main_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.nvapp.kx.shopSales.fragment.main.ContactFragment" />
+
+    <fragment
+        android:id="@+id/fragment_main_internal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.nvapp.kx.shopSales.fragment.main.ContactFragment" />
+
+    <fragment
+        android:id="@+id/fragment_main_my"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.nvapp.kx.shopSales.fragment.main.ContactFragment" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.nvapp.lib.view.NaviTabButton
+            android:id="@+id/navi_btn_chat"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <com.nvapp.lib.view.NaviTabButton
+            android:id="@+id/navi_btn_contact"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <com.nvapp.lib.view.NaviTabButton
+            android:id="@+id/navi_btn_internal"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <com.nvapp.lib.view.NaviTabButton
+            android:id="@+id/navi_btn_my"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
 </RelativeLayout>
