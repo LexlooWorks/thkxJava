@@ -41,12 +41,13 @@ public class HttpFragment extends BaseFragment {
 
 			@Override
 			public void onClick(View v) {
-				RequestParams params = new RequestParams("http://192.168.1.103:8080/yypt/service.mobi");
-				params.addQueryStringParameter("code", "login");
+				RequestParams params = new RequestParams("http://192.168.1.102:8080/yypt/file.mobi");
+				params.addQueryStringParameter("code", "log");
 				params.addQueryStringParameter("tenant_guid", "from mobi");
-				params.setMultipart(true);
+				params.addQueryStringParameter("file_name", "ABC.jpg");
+				params.setMultipart(false);
 				params.addBodyParameter("file",
-						new File(Environment.getExternalStorageDirectory().getPath() + "/itfsm.db"));
+						new File(Environment.getExternalStorageDirectory().getPath() + "/ABC.jpg"));
 				// params.uploadFile = new File("/sdcard/test.txt");
 				// params.setAsJsonContent(false);
 
