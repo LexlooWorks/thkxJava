@@ -43,7 +43,7 @@ public class HttpFragment extends BaseFragment {
 			public void onClick(View v) {
 				RequestParams params = new RequestParams("http://192.168.1.102:8080/yypt/file.mobi");
 				params.addQueryStringParameter("code", "log");
-				params.addQueryStringParameter("tenant_guid", "from mobi");
+				params.addQueryStringParameter("tenant_guid", "1111111122222");
 				params.addQueryStringParameter("file_name", "ABC.jpg");
 				params.setMultipart(false);
 				params.addBodyParameter("file",
