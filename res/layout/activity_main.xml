@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/navi_btns"
-        class="com.nvapp.kx.shopSales.fragment.main.ContactFragment" />
+        class="com.nvapp.kx.shopSales.fragment.main.PdfViewFragment" />
 
     <fragment
         android:id="@+id/fragment_main_internal"
